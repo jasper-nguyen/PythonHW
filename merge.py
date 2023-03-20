@@ -21,12 +21,3 @@ def merge(list1, list2):
 
 
 
-list1 = [1,3,5,7]
-list2 = [2,4,6]
-print(merge(list1, list2))
-list3 = [1,2,3,5]
-list4 = [1,2,4,5,6]
-print(merge(list3, list4))
-list5 = [1,5,9]
-list6 = []
-print(merge(list5, list6))
