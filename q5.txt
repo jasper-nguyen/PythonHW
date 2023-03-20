@@ -1,0 +1,5 @@
+1. No, it does not change the variable
+
+2. Yes, the variable does get chagned
+
+3. Since increment_int_a increments a variable, you would need to create a new variable and assign it. Since increment_int_b uses a list so it can dirrectly be updated
