@@ -1,23 +1,12 @@
-def merge(list1, list2):
-    firstList = list1
-    secondList = list2
-    sortedList = []
-
-    if len(firstList) == 0:
-        return secondList
-    if len(secondList) == 0:
-        return firstList
-
-    while(firstList and secondList):
-        if(firstList[0] < secondList[0]):
-            sortedList.append(firstList.pop(0))
+def merge (list1, list2):
+    output = []
+    while (list1 and list2):
+        if (list1[0] < list2[0]):
+            output.append(list1.pop(0))
         else:
-            sortedList.append(secondList.pop(0))
-    while(firstList):
-        sortedList.append(firstList.pop(0))
-    while(secondList):
-         sortedList.append(secondList.pop(0))
-    return sortedList
-
-
-
+            output.append(list2.pop(0))
+    while (list1):
+        output.append(list1.pop(0))
+    while (list2):
+        output.append(list2.pop(0))
+    return output
