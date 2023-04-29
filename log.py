@@ -1,9 +1,7 @@
-from log import timestamp
-@timestamp
+import time
 
-def hi():
-    print('hi')
-def main():
-    hi()
-
-main()
+def timestamp(funct):
+    def modify():
+        print(time.ctime())
+        funct()
+    return modify
